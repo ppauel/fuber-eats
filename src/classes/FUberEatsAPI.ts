@@ -57,7 +57,8 @@ export class FUberEatsAPI {
             await pinnedMessages.first()?.delete().catch(console.error);
         }
 
-        const payload = await this.getMotdPayload(mensa, date, true).catch(console.error);
+                                                               // disable mentions
+        const payload = await this.getMotdPayload(mensa, date, false).catch(console.error);
         if (!payload) throw new Error("Payload konnte nicht geladen werden");
 
         await channel.send(payload as MessageCreateOptions).then(async msg => await msg.pin().catch(console.error));
