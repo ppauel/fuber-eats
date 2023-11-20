@@ -16,7 +16,7 @@ The [API](https://github.com/davidHarwardt/stw-mensa-api) uses https://www.stw.b
 ## Setup
 
 ### Prerequisites
-* FUber Eats Server: https://github.com/davidHarwardt/stw-mensa-api
+* STW Berlin API Server: https://github.com/davidHarwardt/stw-mensa-api
 * Discord Application (Bot): https://discord.dev
 
 ### Installation
