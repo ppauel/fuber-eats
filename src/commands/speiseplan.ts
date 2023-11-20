@@ -88,7 +88,7 @@ command.execute = async (interaction) => {
     await interaction.deferReply();
 
     const payload = await api.getMotdPayload(mensa, dateString).catch(console.error);
-    if (!payload) throw new Error("Speiseplan konnte nicht geladen werden");
+    if (!payload) throw new Error("Keinen Speiseplan für diesen Tag gefunden");
     await interaction.editReply(payload as InteractionReplyOptions);
 }
 
