@@ -1,6 +1,6 @@
 import { Client, EmbedBuilder, GuildTextBasedChannel, InteractionReplyOptions, MessageCreateOptions, roleMention } from "discord.js";
-import { MOTD, MensaID } from "../types";
 import discordConfig from "../discord.json";
+import { MOTD, MensaID, MensaLinks } from "../types";
 import { cleanPrice, cleanTag, mensaIdToName } from "../utilities/format";
 
 export class FUberEatsAPI {
@@ -30,7 +30,7 @@ export class FUberEatsAPI {
 
     async getMotdPayload(mensa: MensaID, date: string, withMention = false): Promise<MessageCreateOptions | InteractionReplyOptions> {
         const embeds: EmbedBuilder[] = [];
-        const content = `# Speiseplan für ${mensaIdToName(mensa)} vom ${new Date(date).toLocaleDateString('de-DE')}\n${withMention ? roleMention(discordConfig[mensa].role) : ''}`;
+        const content = `# [Speiseplan für ${mensaIdToName(mensa)} vom ${new Date(date).toLocaleDateString('de-DE')}](${MensaLinks[mensa]})\n${withMention ? roleMention(discordConfig[mensa].role) : ''}`;
         const motd = await this.getMotdData(mensa, date).catch(console.error);
         if (!motd) throw new Error("Meal of the Day nicht erreichbar");
 
@@ -56,7 +56,6 @@ export class FUberEatsAPI {
         if (pinnedMessages && pinnedMessages.size > 0) {
             await pinnedMessages.first()?.delete().catch(console.error);
         }
-
                                                                // disable mentions
         const payload = await this.getMotdPayload(mensa, date, false).catch(console.error);
         if (!payload) throw new Error("Payload konnte nicht geladen werden");
