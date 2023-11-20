@@ -76,6 +76,16 @@ export enum Dates {
     Friday = "friday"
 }
 
+export const MensaLinks = {
+    "323": "https://www.stw.berlin/mensen/einrichtungen/freie-universität-berlin/shokudo.html",
+    "322": "https://www.stw.berlin/mensen/einrichtungen/freie-universität-berlin/mensa-fu-ii.html",
+    "271": "https://www.stw.berlin/mensen/einrichtungen/freie-universität-berlin/mensa-fu-herrenhaus-düppel.html",
+    "660": "https://www.stw.berlin/mensen/einrichtungen/freie-universität-berlin/mensa-fu-koserstraße.html",
+    "528": "https://www.stw.berlin/mensen/einrichtungen/freie-universität-berlin/mensa-fu-lankwitz-malteserstraße.html",
+    "542": "https://www.stw.berlin/mensen/einrichtungen/freie-universit%C3%A4t-berlin/mensa-fu-pharmazie.html"
+}
+
+
 export const RecordValueEmojis = {
     Red: "🔴",
     Orange: "🟠",
