@@ -37,7 +37,7 @@ export class FUberEatsAPI {
         motd.groups.forEach(group => {
             const embed = new EmbedBuilder()
                 .setTitle(`${group.name}`)
-                .setColor("#2b2d31")
+                .setColor("#00488E")
 
             group.meals.forEach(meal => {
                 embed.addFields({ name: meal.name, value: `**Preise:** ${cleanPrice(meal.price)}\n${meal.tags.map(tag => cleanTag(tag)).join(' ')}` });
