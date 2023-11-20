@@ -1,0 +1,29 @@
+{
+  "name": "fuber-eats",
+  "version": "1.0.0",
+  "description": "FU Berlin Eats - Mensa Bot",
+  "main": "dist/bot.js",
+  "scripts": {
+    "build": "rm -r dist/* && npx tsc",
+    "dev": "npx ts-node src/bot.ts",
+    "start": "node dist/bot.js",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppauel/fuber-eats.git"
+  },
+  "author": "ppauel",
+  "bugs": {
+    "url": "https://github.com/ppauel/fuber-eats/issues"
+  },
+  "homepage": "https://github.com/ppauel/fuber-eats#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.1"
+  }
+}

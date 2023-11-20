@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "rootDir": "./src",
+        "target": "ES6",
+        "outDir": "./dist",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "noFallthroughCasesInSwitch": true,
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": false,
+        "strict": true,
+        "strictPropertyInitialization": false,
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.json",
+    ],
+    "exclude": [
+        "src/**/*.off.ts",
+        "node_modules"
+    ]
+}
