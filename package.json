@@ -4,7 +4,7 @@
   "description": "FU Berlin Eats - Mensa Bot",
   "main": "dist/bot.js",
   "scripts": {
-    "build": "rm -r dist/* && npx tsc",
+    "build": "rm -rf dist/* && npx tsc",
     "dev": "npx ts-node src/bot.ts",
     "start": "node dist/bot.js",
     "prestart": "npm run build"
