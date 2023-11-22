@@ -23,7 +23,7 @@ export class Schedule {
 
         // Schedule next update
         date.setDate(date.getDate() + 1);
-        date.setHours(0, 0, 0, 0);
+        date.setHours(0, 0, 30, 0);
         const timeout = date.getTime() - Date.now();
         console.log(`Next update in ~${(timeout / 1000 / 60 / 60).toFixed(0)} hours`);
         setTimeout(() => {
