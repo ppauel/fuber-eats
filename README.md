@@ -4,7 +4,7 @@
   
 # FUber Eats
 
-**FU Berlin Eats** - Receive the daily menu in your Discord Server. \
+Receive the daily menu in your Discord Server. \
 The bot broadcasts the menu of all available *Freie Universität* canteens to selected channels every 24 hours. \
 The [API](https://github.com/davidHarwardt/stw-mensa-api) uses https://www.stw.berlin as the source.
 
