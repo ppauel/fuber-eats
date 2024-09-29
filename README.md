@@ -1,8 +1,8 @@
 <div align="center">
 
-![small](https://github.com/ppauel/fuber-eats/assets/82803315/95e67491-769f-46b6-b146-0dbd16727b79)
+![small](https://github.com/ppauel/speiseplan-bot/assets/82803315/95e67491-769f-46b6-b146-0dbd16727b79)
   
-# FUber Eats
+# Speiseplan Bot
 
 Receive the daily menu in your Discord Server. \
 The bot broadcasts the menu of all available *Freie Universität* canteens to selected channels every 24 hours. \
